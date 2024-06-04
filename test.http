@@ -1,0 +1,48 @@
+### Create two accounts
+POST http://localhost:3000/account
+Content-Type: application/json
+
+{
+    "name": "Alice",
+    "balance": 100
+}
+
+###
+
+POST http://localhost:3000/account
+Content-Type: application/json
+
+{
+    "name": "Bob",
+    "balance": 200
+}
+
+### Transfer money from Alice to Bob
+POST http://localhost:3000/transfer
+Content-Type: application/json
+
+{
+    "from": "Alice",
+    "to": "Bob",
+    "amount": 100
+}
+
+POST http://localhost:3000/transfer-no-transaction
+Content-Type: application/json
+
+{
+    "from": "Alice",
+    "to": "Bob",
+    "amount": 100
+}
+
+
+
+
+### Get account information for Alice
+GET http://localhost:3000/account/Alice
+
+###
+
+### Get account information for Bob
+GET http://localhost:3000/account/Bob
