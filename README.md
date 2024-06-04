@@ -48,5 +48,5 @@ Type rs. status() to see the current configuration. So we have completed the con
  Finally replace your string connection with ` your private ip` and `port` of **r1**.
 
 
-[Link - Example using Transaction in Mongo ](https://github.com/ddhuu/transaction-mongodb)
+
 
